@@ -77,8 +77,10 @@ spec:
 EOF
 
 # Q4: podman + local registry
-apt-get update
-DEBIAN_FRONTEND=noninteractive apt-get install -y podman
+if ! command -v podman >/dev/null; then
+  apt-get update
+  DEBIAN_FRONTEND=noninteractive apt-get install -y podman
+fi
 echo "127.0.0.1 registry.exam.local" >> /etc/hosts
 mkdir -p /etc/containers/registries.conf.d
 cat > /etc/containers/registries.conf.d/exam.conf <<'EOF'
