@@ -1,0 +1,51 @@
+{
+  "title": "CKAD Mock 1 - Build & Deploy",
+  "description": "6 exam-style tasks: Jobs, InitContainers, native sidecars, container images, rolling updates and blue-green switching. Target time: 45 minutes.",
+  "difficulty": "intermediate",
+  "time": "45 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "wait.sh"
+    },
+    "steps": [
+      {
+        "title": "Q1 - Job",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Q2 - InitContainer",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Q3 - Sidecar, Pull Policy, Termination",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Q4 - Container Images",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Q5 - Rolling Update & Rollback",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "Q6 - Blue-Green Switch",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
