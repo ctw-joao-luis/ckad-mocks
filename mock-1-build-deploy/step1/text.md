@@ -13,12 +13,15 @@ Apply the manifest. When the Job has finished, write the logs of **one** of its 
 <details>
 <summary>Solution</summary>
 
+Generate a starting manifest. `--dry-run=client` only writes YAML; nothing is created in the cluster yet:
+
 ```
 kubectl -n orion create job data-cruncher --image=busybox:1.36 \
   --dry-run=client -o yaml -- sh -c "sleep 3 && echo processed" > /exam/q1/job.yaml
+cat /exam/q1/job.yaml
 ```
 
-Edit `/exam/q1/job.yaml`:
+Edit `/exam/q1/job.yaml` so it matches:
 
 ```yaml
 apiVersion: batch/v1

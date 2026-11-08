@@ -1,0 +1,51 @@
+{
+  "title": "CKAD Mock 2 - Config & Security",
+  "description": "6 exam-style tasks: Namespaces and labels, ServiceAccounts and tokens, ResourceQuotas, ConfigMaps, Secrets and SecurityContexts. Target time: 45 minutes.",
+  "difficulty": "intermediate",
+  "time": "45 minutes",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "background": "setup.sh",
+      "foreground": "wait.sh"
+    },
+    "steps": [
+      {
+        "title": "Q1 - Namespaces & Labels",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
+      },
+      {
+        "title": "Q2 - ServiceAccount, Resources & Quota",
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
+      },
+      {
+        "title": "Q3 - ServiceAccount Tokens",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Q4 - ConfigMap & Secret",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Q5 - SecurityContext",
+        "text": "step5/text.md",
+        "verify": "step5/verify.sh"
+      },
+      {
+        "title": "Q6 - Labels & Selectors",
+        "text": "step6/text.md",
+        "verify": "step6/verify.sh"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  }
+}
